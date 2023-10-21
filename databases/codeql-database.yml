@@ -1,0 +1,5 @@
+---
+sourceLocationPrefix: "/opt/src"
+unicodeNewlines: false
+columnKind: "utf16"
+primaryLanguage: "java"

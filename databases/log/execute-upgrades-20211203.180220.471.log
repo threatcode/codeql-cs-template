@@ -1,0 +1,64 @@
+[2021-12-03 18:02:20] This is codeql execute upgrades -J-Xmx8192M --off-heap-ram=8192 --verbosity=progress --logdir=/Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/log --evaluator-log-level=1 --ml-model-path=/Users/pwntester/seclab/projects/audits/dubbo/codeql --search-path=/Users/pwntester/codeql-home/codeql -- /Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java /Users/pwntester/codeql-home/codeql/java/upgrades/60a4ba1a4757a01b9dfc134179788753c1388ede /Users/pwntester/codeql-home/codeql/java/upgrades/b4e689c90426b017ad550e30a439cab2763ff424 /Users/pwntester/codeql-home/codeql/java/upgrades/8ab354e68e86100ee3abe28bd44f491ecc77c1dd /Users/pwntester/codeql-home/codeql/java/upgrades/017ac1ed2df1eaa5d8c4ae1849261c82392209d4
+[2021-12-03 18:02:20] [PROGRESS] execute upgrades> Will apply 4 upgrade scripts.
+[2021-12-03 18:02:20] Creating executor with 1 threads.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> Dbscheme will be at b4e689c90426b017ad550e30a439cab2763ff424.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> [1/4] Will run: Java: add `permits` relation for sealed classes.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> Dbscheme will be at 8ab354e68e86100ee3abe28bd44f491ecc77c1dd.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> [2/4] Will run: Java 16: allow local interfaces.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> Dbscheme will be at 017ac1ed2df1eaa5d8c4ae1849261c82392209d4.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> [3/4] Will run: Removed unused column from the `folders` and `files` relations.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> Dbscheme will be at 89a76edebff191538968a6b25d22ada661ffa59a.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> [4/4] Will run: Use the more specific classorinterface rather than type.
+[2021-12-03 18:02:20] [DETAILS] execute upgrades> Running upgrades.
+[2021-12-03 18:02:21] Clearing disk cache since the version file /Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java/default/cache/version contained 20190805:20201008:20201008:20200927 and we expected 20190805:20201008:20201008:20210920
+[2021-12-03 18:02:21] Tuple pool not found. Clearing relations with cached strings
+[2021-12-03 18:02:21] Trimming disk cache at /Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java/default/cache in mode brutal.
+[2021-12-03 18:02:21] Sequence stamp origin is -6516363288241882984
+[2021-12-03 18:02:21] Pausing evaluation to hard-clear memory at sequence stamp o+0
+[2021-12-03 18:02:21] Unpausing evaluation
+[2021-12-03 18:02:21] Pausing evaluation to quickly trim disk at sequence stamp o+1
+[2021-12-03 18:02:21] Unpausing evaluation
+[2021-12-03 18:02:21] Pausing evaluation to zealously trim disk at sequence stamp o+2
+[2021-12-03 18:02:21] Unpausing evaluation
+[2021-12-03 18:02:21] Trimming completed (7ms): Purged everything.
+[2021-12-03 18:02:21] (0s) Start query execution
+[2021-12-03 18:02:21] (0s) Beginning execution of output
+[2021-12-03 18:02:21] (0s)  >>> Created relation isLocalClass/2@60aa59il with 0 rows.
+[2021-12-03 18:02:21] (0s) Starting to evaluate predicate output/2@23031b3n
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@23031b3n with 0 rows.
+[2021-12-03 18:02:21] (0s) No need to promote strings for predicate output  as it does not contain computed strings.
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@239dac9a with 0 rows.
+[2021-12-03 18:02:21] CSV_CACHE_DIFF: Operation,Overall time,NONE,LOAD_EXTENSIONAL,PAGE_RELATION,SORT_RELATION,NODUPS_RELATION,GLOBAL_DISK_SYNC,GLOBAL_TRIM_DISK,GLOBAL_TRIM_STRINGS,GLOBAL_EVICTOR,SCAN_DISK,IO_TRIMMING,IO_WRITING
+[2021-12-03 18:02:21] CSV_CACHE_DIFF: output (q1),0.037,0.213,0.009,0,0,0,0,0.003,0,0,0,0,0
+[2021-12-03 18:02:21] CSV_IMB_QUERIES: Query type,Query predicate,Query name,Stage,Success,Time,Number of results,Cumulative time in query
+[2021-12-03 18:02:21] CSV_IMB_QUERIES: Stage,output,q1,1,Success,0.037,0,40
+[2021-12-03 18:02:21] (0s) Beginning execution of output
+[2021-12-03 18:02:21] (0s)  >>> Created relation files/5@e756b9ja with 13028 rows.
+[2021-12-03 18:02:21] (0s) Starting to evaluate predicate output/2@ad5ddcbn
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@ad5ddcbn with 13028 rows.
+[2021-12-03 18:02:21] (0s) No need to promote strings for predicate output  as it does not contain computed strings.
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@8d2833cv with 13028 rows.
+[2021-12-03 18:02:21] CSV_CACHE_DIFF: output (q1),0.027,0.038,0.019,0,0,0,0,0,0,0,0,0,0
+[2021-12-03 18:02:21] CSV_IMB_QUERIES: Stage,output,q1,2,Success,0.027,13028,68
+[2021-12-03 18:02:21] (0s) Beginning execution of output
+[2021-12-03 18:02:21] (0s)  >>> Created relation folders/3@65ac70o5 with 4168 rows.
+[2021-12-03 18:02:21] (0s) Starting to evaluate predicate output/2@48e9e4qd
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@48e9e4qd with 4168 rows.
+[2021-12-03 18:02:21] (0s) No need to promote strings for predicate output  as it does not contain computed strings.
+[2021-12-03 18:02:21] (0s)  >>> Created relation output/2@36051cqi with 4168 rows.
+[2021-12-03 18:02:21] CSV_CACHE_DIFF: output (q1),0.007,0.012,0.004,0,0,0,0,0,0,0,0,0,0
+[2021-12-03 18:02:21] CSV_IMB_QUERIES: Stage,output,q1,3,Success,0.007,4168,76
+[2021-12-03 18:02:21] (0s) Beginning execution of q1
+[2021-12-03 18:02:21] (0s) Query done
+[2021-12-03 18:02:21] CSV_CACHE_DIFF: isLocalClassOrInterface files folders (q1),0.05,0.102,0,0,0,0,0,0,0,0,0,0,0
+[2021-12-03 18:02:21] (0s) Pausing evaluation to sync to disk at sequence stamp o+20
+[2021-12-03 18:02:21] (0s) Unpausing evaluation
+[2021-12-03 18:02:21] CSV_IMB_QUERIES: Query,isLocalClassOrInterface files folders,q1,3,Success,0.05,17196,147
+[2021-12-03 18:02:21] Pausing evaluation to close the cache at sequence stamp o+21
+[2021-12-03 18:02:21] Doing closing disk-cache trim now.
+[2021-12-03 18:02:21] After trimming, disk cache uses 38.26kiB.
+[2021-12-03 18:02:21] Unpausing evaluation
+[2021-12-03 18:02:21] 	-> Cleaning up...
+[2021-12-03 18:02:21] 	-> Upgrade completed.
+[2021-12-03 18:02:21] [DETAILS] execute upgrades> Finished running upgrades.
+[2021-12-03 18:02:21] Terminating normally.

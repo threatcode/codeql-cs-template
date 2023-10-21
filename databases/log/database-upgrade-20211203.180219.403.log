@@ -1,0 +1,41 @@
+[2021-12-03 18:02:19] This is codeql database upgrade pwntester_dubbo_v2.7.8_3b2cfa9
+[2021-12-03 18:02:19] Log file was started late.
+[2021-12-03 18:02:19] Running plumbing command: codeql dataset upgrade --evaluator-log-level=1 --ml-model-path= --search-path=/Users/pwntester/codeql-home/codeql -- /Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java
+[2021-12-03 18:02:19] Calling plumbing command: codeql resolve upgrades --search-path=/Users/pwntester/codeql-home/codeql --dbscheme=/Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java/semmlecode.dbscheme --format=json
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Searching for upgrades that apply to 60a4ba1a4757a01b9dfc134179788753c1388ede.
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/codeql/.codeqlmanifest.json
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/cli/
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Not scanning from /Users/pwntester/codeql-home/codeql which is already done.
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/codeql-go/.codeqlmanifest.json
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/codeql-ruby/.codeqlmanifest.json
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Scanning for [codeql-pack.yml, qlpack.yml] from /Users/pwntester/codeql-home/codeql-ruby/ruby/.codeqlmanifest.json
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/python/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/java/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/cpp/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/csharp/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/javascript/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql/ruby/ql/lib/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/cli/legacy-upgrades/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Will look for upgrades in /Users/pwntester/codeql-home/codeql-go/upgrades
+[2021-12-03 18:02:19] [DETAILS] resolve upgrades> Found upgrade run ending at 89a76edebff191538968a6b25d22ada661ffa59a.
+[2021-12-03 18:02:19] Plumbing command codeql resolve upgrades completed:
+                      {
+                        "scripts" : [
+                          "/Users/pwntester/codeql-home/codeql/java/upgrades/60a4ba1a4757a01b9dfc134179788753c1388ede",
+                          "/Users/pwntester/codeql-home/codeql/java/upgrades/b4e689c90426b017ad550e30a439cab2763ff424",
+                          "/Users/pwntester/codeql-home/codeql/java/upgrades/8ab354e68e86100ee3abe28bd44f491ecc77c1dd",
+                          "/Users/pwntester/codeql-home/codeql/java/upgrades/017ac1ed2df1eaa5d8c4ae1849261c82392209d4"
+                        ],
+                        "finalDbscheme" : "/Users/pwntester/codeql-home/codeql/java/upgrades/017ac1ed2df1eaa5d8c4ae1849261c82392209d4/semmlecode.dbscheme"
+                      }
+[2021-12-03 18:02:19] Calling plumbing command: codeql resolve ram --format=json
+[2021-12-03 18:02:19] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx8192M",
+                        "--off-heap-ram=8192"
+                      ]
+[2021-12-03 18:02:20] Spawning plumbing command: execute upgrades -J-Xmx8192M --off-heap-ram=8192 --verbosity=progress --logdir=/Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/log --evaluator-log-level=1 --ml-model-path=/Users/pwntester/seclab/projects/audits/dubbo/codeql --search-path=/Users/pwntester/codeql-home/codeql -- /Users/pwntester/seclab/projects/audits/dubbo/codeql/pwntester_dubbo_v2.7.8_3b2cfa9/db-java /Users/pwntester/codeql-home/codeql/java/upgrades/60a4ba1a4757a01b9dfc134179788753c1388ede /Users/pwntester/codeql-home/codeql/java/upgrades/b4e689c90426b017ad550e30a439cab2763ff424 /Users/pwntester/codeql-home/codeql/java/upgrades/8ab354e68e86100ee3abe28bd44f491ecc77c1dd /Users/pwntester/codeql-home/codeql/java/upgrades/017ac1ed2df1eaa5d8c4ae1849261c82392209d4
+[2021-12-03 18:02:21] Plumbing command codeql execute upgrades terminated with status 0.
+[2021-12-03 18:02:21] Plumbing command codeql dataset upgrade completed with status 0.
+[2021-12-03 18:02:21] Exiting with code 0
